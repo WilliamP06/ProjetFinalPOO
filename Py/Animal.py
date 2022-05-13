@@ -2,17 +2,33 @@ class Animal:
     """
     Classe parent Animal
     """
-    def __init__(self, p_poid = 0.0, p_taille = 0.0, p_longevite = 0, p_diet = ""):
+    def __init__(self, p_numero = 0, p_poid = 0.0, p_taille = 0.0, p_longevite = 0, p_diet = "", p_enclos = ""):
         """
         Constructeur de la classe parent Animal
+        :param p_numero
         :param p_poid:
         :param p_taille:
-        :param p_protection:
+        :param p_longevite:
+        :param p_diet
         """
+        self.__Numero = p_numero
         self.__Poid = p_poid
         self.__Taille = p_taille
         self.__Longevite = p_longevite
         self.Diet = p_diet
+        self.Enclos = p_enclos
+
+
+
+    def _get_numero(self):
+        return self.__Numero
+
+    def _set_numero(self, v):
+        if self.__Numero == 6 and v.isnumeric():
+            self.__Numero = v
+
+    Numero = property(_get_numero, _set_numero)
+
 
     def _get_poid(self):
         return self.__Poid

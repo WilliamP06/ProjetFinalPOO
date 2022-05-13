@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>509</width>
-    <height>534</height>
+    <width>491</width>
+    <height>717</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="lineEdit_numero_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -23,7 +23,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="lineEdit_poids_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -33,7 +33,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="lineEdit_taille_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -43,7 +43,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="label_poids_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -56,7 +56,7 @@
     <string>Poids (lbs)</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="label_taille_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -69,7 +69,7 @@
     <string>Taille (m)</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="label_longevite_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -82,7 +82,7 @@
     <string>Espérence de vie (années)</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="label_diet_poisson">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -95,7 +95,7 @@
     <string>Diet</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox">
+  <widget class="QComboBox" name="comboBox_diet_poisson">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -105,20 +105,20 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButton_quitter_poisson">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>470</y>
-     <width>111</width>
-     <height>51</height>
+     <x>400</x>
+     <y>481</y>
+     <width>81</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
     <string>Quitter</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="lineEdit_longevite_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -128,7 +128,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="label_numero_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -141,11 +141,11 @@
     <string>Numéro du poisson</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="pushButton_ajouter_poisson">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>470</y>
+     <x>10</x>
+     <y>380</y>
      <width>111</width>
      <height>51</height>
     </rect>
@@ -154,7 +154,7 @@
     <string>Ajouter</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_2">
+  <widget class="QComboBox" name="comboBox_type_eau">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -164,7 +164,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="label_type_queue">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -177,7 +177,7 @@
     <string>Type de queue</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="QLabel" name="label_type_eau">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -190,7 +190,7 @@
     <string>Type d'eau</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_3">
+  <widget class="QComboBox" name="comboBox_type_peau">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -200,7 +200,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="label_8">
+  <widget class="QLabel" name="label_type_peau">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -213,7 +213,7 @@
     <string>Type de peau</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_4">
+  <widget class="QComboBox" name="comboBox_type_queue">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -223,11 +223,11 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="pushButton_modifier_poisson">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>470</y>
+     <x>130</x>
+     <y>380</y>
      <width>111</width>
      <height>51</height>
     </rect>
@@ -236,11 +236,11 @@
     <string>Modifier</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="pushButton_supprimer_poisson">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>470</y>
+     <x>10</x>
+     <y>440</y>
      <width>111</width>
      <height>51</height>
     </rect>
@@ -249,7 +249,7 @@
     <string>Supprimer</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_5">
+  <widget class="QComboBox" name="comboBox_enclos_poisson">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -259,7 +259,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="label_9">
+  <widget class="QLabel" name="label_enclos_poisson">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -272,7 +272,7 @@
     <string>Type d'enclos</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_10">
+  <widget class="QLabel" name="label_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -293,12 +293,12 @@
     <string>Poisson</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_11">
+  <widget class="QLabel" name="label_erreur_numero_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>70</y>
-     <width>211</width>
+     <width>221</width>
      <height>21</height>
     </rect>
    </property>
@@ -346,7 +346,7 @@
     <string>Erreur! Ce numéro est invalide ou déja pris.</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_18">
+  <widget class="QLabel" name="label_erreur_poids_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -399,7 +399,7 @@
     <string>Erreur! ce poid n'est pas valide</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_17">
+  <widget class="QLabel" name="label_erreur_taille_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -452,7 +452,7 @@
     <string>Erreur! cette taille n'est pas valide</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_19">
+  <widget class="QLabel" name="label_erreur_longevite_poisson">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -503,6 +503,29 @@
    </property>
    <property name="text">
     <string>Erreur! cette longévité n'est pas valide</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_afficher_poisson">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>440</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Afficher</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser_poisson">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>500</y>
+     <width>471</width>
+     <height>192</height>
+    </rect>
    </property>
   </widget>
  </widget>
