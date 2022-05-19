@@ -2,7 +2,7 @@ class Animal:
     """
     Classe parent Animal
     """
-    def __init__(self, p_numero = 0, p_poid = 0.0, p_taille = 0.0, p_longevite = 0, p_diet = "", p_enclos = ""):
+    def __init__(self, p_numero = 0, p_poid = 0, p_taille = 0.0, p_longevite = 0, p_diet = "", p_enclos = ""):
         """
         Constructeur de la classe parent Animal
         :param p_numero
@@ -24,7 +24,7 @@ class Animal:
         return self.__Numero
 
     def _set_numero(self, v):
-        if self.__Numero == 6 and v.isnumeric():
+        if v.isnumeric() and len(v) == 6:
             self.__Numero = v
 
     Numero = property(_get_numero, _set_numero)
@@ -34,8 +34,9 @@ class Animal:
         return self.__Poid
 
     def _set_poid(self, v):
-        if self.__Poid <= 13228 or self.__Poid >= 0.00220462 and v.isnumeric():
-            self.__Poid = v
+        if v.isnumeric():
+            if (int(v) <= 6000120) and (int(v) >= 2):
+                self.__Poid = int(v)
 
     Poid = property(_get_poid, _set_poid)
 
@@ -44,8 +45,9 @@ class Animal:
         return self.__Taille
 
     def _set_taille(self, v):
-        if self.__Taille <= 5.5 or self.__Taille >= 0.0077 and v.isnumeric():
-            self.__Taille = v
+        if v.isnumeric():
+            if (int(v) <= 550) and (int(v) >= 3):
+                self.__Taille = int(v)
 
     Taille = property(_get_taille, _set_taille)
 
@@ -54,7 +56,8 @@ class Animal:
         return self.__Longevite
 
     def _set_longevite(self, v):
-        if self.__Longevite <= 255 or self.__Longevite >= 1 and v.isnumeric():
-            self.__Longevite = v
+        if v.isnumeric():
+            if (int(v) <= 255) and (int(v) >= 1):
+                self.__Longevite = int(v)
 
     Longevite = property(_get_longevite, _set_longevite)

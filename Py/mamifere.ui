@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Poids (lbs)</string>
+    <string>Poids (g)</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_taille_mamifere">
@@ -36,7 +36,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Taille (m)</string>
+    <string>Taille (cm)</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_longevite_mamifere">
@@ -126,6 +126,26 @@
      <height>41</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>Pattes</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Sabots</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Griffes</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Patte palmée</string>
+    </property>
+   </item>
   </widget>
   <widget class="QComboBox" name="comboBox_diet_mamifere">
    <property name="geometry">
@@ -136,6 +156,21 @@
      <height>41</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>Carnivore</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Herbivore</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Omnivore</string>
+    </property>
+   </item>
   </widget>
   <widget class="QLineEdit" name="lineEdit_poids_mamifere">
    <property name="geometry">
@@ -228,6 +263,26 @@
      <height>41</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>Petit enclos</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Moyen enclos</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Gros enclos</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Très gros enclos</string>
+    </property>
+   </item>
   </widget>
   <widget class="QPushButton" name="pushButton_ajouter_mamifere">
    <property name="geometry">
@@ -261,6 +316,56 @@
      <height>41</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>Blanc</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Noir</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Brun</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Gris</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Rouge</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Orange</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Jaune</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vert</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bleu</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mauve</string>
+    </property>
+   </item>
   </widget>
   <widget class="QLabel" name="label_mamifere">
    <property name="geometry">
@@ -393,9 +498,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>310</y>
+     <y>311</y>
      <width>211</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="palette">
@@ -526,6 +631,59 @@
      <width>211</width>
      <height>41</height>
     </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_erreur_nbdoigts_mamifere">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>311</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>120</red>
+         <green>120</green>
+         <blue>120</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Erreur! ce nombre n'est pas valide</string>
    </property>
   </widget>
  </widget>

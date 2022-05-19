@@ -53,7 +53,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Poids (lbs)</string>
+    <string>Poids (g)</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_taille_poisson">
@@ -66,7 +66,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Taille (m)</string>
+    <string>Taille (cm)</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_longevite_poisson">
@@ -104,6 +104,21 @@
      <height>41</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>Carnivore</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Herbivore</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Omnivore</string>
+    </property>
+   </item>
   </widget>
   <widget class="QPushButton" name="pushButton_quitter_poisson">
    <property name="geometry">
@@ -163,6 +178,21 @@
      <height>41</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>Eau douce</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Eau salée</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Douce + Salée</string>
+    </property>
+   </item>
   </widget>
   <widget class="QLabel" name="label_type_queue">
    <property name="geometry">
@@ -199,6 +229,31 @@
      <height>41</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>Peau cténoïde</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Peau cycloïde</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Peau ganoïde</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Peau placoïde</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Peau lisse</string>
+    </property>
+   </item>
   </widget>
   <widget class="QLabel" name="label_type_peau">
    <property name="geometry">
@@ -222,6 +277,41 @@
      <height>41</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>Queue hétérocerque</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Queue à bifurcation</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Queue lunaire</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Queue émarginée</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Queue tronquée</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Queue arrondie</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Queue pointue</string>
+    </property>
+   </item>
   </widget>
   <widget class="QPushButton" name="pushButton_modifier_poisson">
    <property name="geometry">
@@ -258,6 +348,26 @@
      <height>41</height>
     </rect>
    </property>
+   <item>
+    <property name="text">
+     <string>Petit aquarium</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Moyen aquarium</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Gros aquarium</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Très gros aquarium</string>
+    </property>
+   </item>
   </widget>
   <widget class="QLabel" name="label_enclos_poisson">
    <property name="geometry">

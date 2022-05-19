@@ -4,7 +4,7 @@ class Mamifere(Animal):
     """
     Classe dérivée Mamifere de la classe parent Animal
     """
-    def __init__(self, p_numero = 0, p_poid = 0.0, p_taille = 0.0, p_longevite = 0, p_diet = "",p_couleur_fourrure = "", p_type_patte = "", nb_doigts = 0, p_enclos = ""):
+    def __init__(self, p_numero = 0, p_poid = 0, p_taille = 0.0, p_longevite = 0, p_diet = "",p_couleur_fourrure = "", p_type_patte = "", nb_doigts = 0, p_enclos = ""):
         """
         Contructeur de la classe Mamifere
         :param p_couleur_fourrure:
@@ -22,7 +22,7 @@ class Mamifere(Animal):
         :return: La chaine qui permet de d'afficher les attributs de l'objet de la classe Mamifere instancié
         """
         return " " * 60 + "\n" + "*" * 60 + "\n\n" +\
-               "Numéro du mamifère : " + str(self.Numero) +\
+               "Numéro du mamifère : " + str(self.Numero) + "\n" +\
                "Poids du mamifère : " + str(self.Poid) + "\n" +\
                "Taille du mamifère : " + str(self.Taille) + "\n" +\
                "Espérence de vie du mamifère : " + str(self.Longevite) + "\n" +\
@@ -35,7 +35,8 @@ class Mamifere(Animal):
         return self.__Nb_Doigts
 
     def _set_nb_doigts(self, v):
-        if self.__Nb_Doigts >= 0 or self.__Nb_Doigts <= 28:
-            self.__Nb_Doigts = v
+        if v.isnumeric():
+            if (int(v) <= 28) and (int(v) >= 0):
+                self.__Nb_Doigts = int(v)
 
     Nbdoigts = property(_get_nb_doigts, _set_nb_doigts)

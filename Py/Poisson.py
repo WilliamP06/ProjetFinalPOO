@@ -4,7 +4,7 @@ class Poisson(Animal):
     """
     Classe dérivée Mamifere de la classe parent Poisson
     """
-    def __init__(self, p_numero, p_poid = 0.0, p_taille = 0.0, p_longevite = 0, p_diet = "", p_type_eau = "", p_type_peau = "",p_type_queue = "", p_enclos = ""):
+    def __init__(self, p_numero = 0, p_poid = 0.0, p_taille = 0.0, p_longevite = 0, p_diet = "", p_type_eau = "", p_type_peau = "",p_type_queue = "", p_enclos = ""):
         """
         Contructeur de la classe Poisson
         :param p_poid:
@@ -25,7 +25,8 @@ class Poisson(Animal):
         Fonction magique __str__
         :return: La chaine qui permet de d'afficher les attributs de l'objet de la classe Poisson instancié
         """
-        return " " * 60 + "\n" + "*" * 60 + "\n\n" + str(self.Numero) +\
+        return " " * 60 + "\n" + "*" * 60 + "\n\n" +\
+                "Numéro du poisson : " + str(self.Numero) + "\n" +\
                 "Poids du poisson : " + str(self.Poid) + "\n" + \
                 "Taille du poisson : " + str(self.Taille) + "\n" + \
                 "Espérence de vie du poisson : " + str(self.Longevite) + "\n" + \
