@@ -23,6 +23,7 @@ import interface_zoomain
 import interface_mamifere
 import interface_oiseau
 import interface_poisson
+import interface_enclos
 
 # Importation des librairies nécessaies à QtDesigner
 from PyQt5 import QtWidgets
@@ -37,6 +38,7 @@ from Enclos import *
 from MamifereDialog import FenetreMamifere
 from OiseauDialog import FenetreOiseau
 from PoissonDialog import FenetrePoisson
+from EnclosDialog import FenetreEnclos
 ####################################################################################
 
 # Déclarer une liste Animal, mamifères, oiseau, poisson et enclos
@@ -111,6 +113,23 @@ class mainwindow(QtWidgets.QMainWindow, interface_zoomain.Ui_MainWindow):
 
         # Instancier une boite de dialogue FenetrePoisson
         dialog = FenetrePoisson()
+
+        # Afficher la boite de dialogue
+        dialog.show()
+        reponse = dialog.exec_()
+
+####################################################################################
+    # Utiliser le décorateur pour empêcher que le code du gestionnaire d'événement du bouton ne s'éxecute deux fois
+    @pyqtSlot()
+    def on_pushButton_enclos_clicked(self):
+    # Boutton Enclos
+        """
+        Gestionnaire de l'événement click du bouton on_pushButton_poisson_clicked
+        :return:
+        """
+
+        # Instancier une boite de dialogue FenetrePoisson
+        dialog = FenetreEnclos()
 
         # Afficher la boite de dialogue
         dialog.show()

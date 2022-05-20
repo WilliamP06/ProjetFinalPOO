@@ -4,6 +4,9 @@ from PyQt5 import QtWidgets
 # Pour le gestionnaire d'événement
 from PyQt5.QtCore import pyqtSlot
 
+# Pour le boutton "Afficher"
+from PyQt5.QtGui import QStandardItemModel
+
 # Importer la boite de dialogue
 import interface_poisson
 
@@ -108,10 +111,6 @@ class FenetrePoisson(QtWidgets.QDialog, interface_poisson.Ui_Dialog):
         self.lineEdit_poids_poisson.clear()
         self.lineEdit_taille_poisson.clear()
         self.lineEdit_longevite_poisson.clear()
-        # Ajouter l'objet instancié à la liste poisson
-        ls_Poisson.append(poi)
-        # Ajouter les informations du Poisson entré au textBrowser
-        self.textBrowser_poisson.append(poi.__str__())
 
 ####################################################################################
     @pyqtSlot()
@@ -234,6 +233,18 @@ class FenetrePoisson(QtWidgets.QDialog, interface_poisson.Ui_Dialog):
             self.label_erreur_numero_poisson.setVisible(True)
 
 ####################################################################################
+    @pyqtSlot()
+    # Boutton Afficher
+    def on_pushButton_afficher_poisson_clicked(self):
+        boite = FenetrePoisson()
+        model = QStandardItemModel()
+        boite.textBrowser_poisson.append(model)
+        for poi in ls_Poisson:
+            item = QStandardItemModel(poi.Numero + " * " + poi.Poid + " * " + poi.Taille + " * " + poi.Longevite + " * " + poi.Diet + " * " + poi.Enclos + " * " + poi.Type_eau + " * " + poi.Type_peau + " * " + poi.Type_queue)
+            model.appendRow(item)
+
+####################################################################################
+
     @pyqtSlot()
     def on_pushButton_quitter_poisson_clicked(self):
         self.close()

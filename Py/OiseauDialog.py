@@ -4,6 +4,9 @@ from PyQt5 import QtWidgets
 # Pour le gestionnaire d'événement
 from PyQt5.QtCore import pyqtSlot
 
+# Pour le boutton "Afficher"
+from PyQt5.QtGui import QStandardItemModel
+
 # Importer la boite de dialogue
 import interface_oiseau
 
@@ -254,7 +257,16 @@ class FenetreOiseau(QtWidgets.QDialog, interface_oiseau.Ui_Dialog):
             self.label_erreur_numero_oiseau.setVisible(True)
 
 ####################################################################################
-# TODO Bouton Afficher
+    @pyqtSlot()
+    # Boutton Afficher
+    def on_pushButton_afficher_oiseau_clicked(self):
+        boite = FenetreOiseau()
+        model = QStandardItemModel()
+        boite.textBrowser_oiseau.append(model)
+        for ois in ls_Oiseau:
+            item = QStandardItemModel(ois.Numero + " * " + ois.Poid + " * " + ois.Taille + " * " + ois.Longevite + " * " + ois.Diet + " * " + ois.Enclos + " * " + ois.Couleur_plumes + " * " + ois.Couleur_bec + " * " + ois.Longueurbec)
+            model.appendRow(item)
+
 ####################################################################################
     @pyqtSlot()
     def on_pushButton_quitter_oiseau_clicked(self):

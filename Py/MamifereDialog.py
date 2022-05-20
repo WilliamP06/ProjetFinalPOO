@@ -4,6 +4,9 @@ from PyQt5 import QtWidgets
 # Pour le gestionnaire d'événement
 from PyQt5.QtCore import pyqtSlot
 
+# Pour le boutton "Afficher"
+from PyQt5.QtGui import QStandardItemModel
+
 # Importer la boite de dialogue
 import interface_mamifere
 
@@ -256,10 +259,15 @@ class FenetreMamifere(QtWidgets.QDialog, interface_mamifere.Ui_Dialog):
             self.label_erreur_numero_mamifere.setVisible(True)
 
 ####################################################################################
-    #TODO
-    # @pyqtSlot()
-    # # Boutton Afficher
-    # def on_pushButton_afficher_mamifere_clicked(self):
+    @pyqtSlot()
+    # Boutton Afficher
+    def on_pushButton_afficher_mamifere_clicked(self):
+        boite = FenetreMamifere()
+        model = QStandardItemModel()
+        boite.textBrowser_mamifere.append(model)
+        for mam in ls_Mamifere:
+            item = QStandardItemModel(mam.Numero + " * " + mam.Poid + " * " + mam.Taille + " * " + mam.Longevite + " * " + mam.Diet + " * " + mam.Enclos + " * " + mam.Couleur_fourrure + " * " + mam.Type_patte + " * " + mam.Nbdoigts)
+            model.appendRow(item)
 
 ####################################################################################
     @pyqtSlot()
